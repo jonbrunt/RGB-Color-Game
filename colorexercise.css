@@ -1,0 +1,75 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	background-color: rgb(147,200,63);
+	margin: 0;
+	padding: 20px 0;
+	font-weight: 400;
+	letter-spacing: 1px;
+	transition: background-color 0.75s;
+	-webkit-transition: background-color 0.75s;
+	-moz-transition: background-color 0.75s;
+}	
+
+#secretColor {
+	font-size: 200%;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+#banner {
+	background-color: white;
+	height: 30px;
+	margin-top: 0;
+	text-align: center;
+}
+
+button {
+	height: 100%;
+	background-color: white;
+	border: none;
+	outline: none;
+	font-weight: 700;
+	color: rgb(147,200,63);
+	font-size: inherit;
+	transition: background-color 0.75s;
+	-webkit-transition: background-color 0.75s;
+	-moz-transition: background-color 0.75s;
+}
+
+button:hover {
+	background-color: rgb(147,200,63);
+	color: white;
+}
+
+#result {
+	padding: 0 10%;
+}
+
+#container {
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+.squares {
+	width: 30%;
+	padding-bottom: 30%;
+	margin: 1.66%;
+	border-radius: 20%;
+	background-color: yellow;
+	float: left;
+	transition: 0.75s;
+	-webkit-transition: 0.75s;
+	-moz-transition: 0.75s;
+}
+
+.selected {
+	background-color: rgb(147,200,63);
+	color: white;
+}
