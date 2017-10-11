@@ -1,2 +1,2 @@
 # RGB-Color-Game
-My final product of an assignment from Colt Steele's Web Developer Bootcamp, after reviewing the code along, and then implementing the product with my own code while only using the example working product in the browser as graphical/functional reference.
+A color game inspired by an assignment from Colt Steele's Web Developer Bootcamp, reverse engineered in my own code using plain HTML, CSS, and vanilla JS.
