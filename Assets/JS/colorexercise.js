@@ -1,5 +1,5 @@
 var colors = [];
-var	numSquares = 6;
+var numSquares = 6;
 var winningColor;
 var squares = document.querySelectorAll(".squares");
 var resetButton = document.querySelector("#reset");
