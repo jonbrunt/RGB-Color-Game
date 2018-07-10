@@ -32,7 +32,7 @@ function process() {
 }
 //Resets The Game To Original Settings
 function reset() {
-	document.querySelector("h1").style.backgroundColor = "rgb(147,200,63)";
+	document.querySelector("h1").style.backgroundColor = "rgb(153,0,0)";
 	resetButton.textContent	= "NEW COLORS";
 	bannerText.textContent = " ";
 	colors = [];

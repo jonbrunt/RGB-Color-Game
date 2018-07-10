@@ -7,7 +7,7 @@ body {
 h1 {
 	color: white;
 	text-align: center;
-	background-color: rgb(147,200,63);
+	background-color: rgb(153,0,0);
 	margin: 0;
 	padding: 20px 0;
 	font-weight: 400;
@@ -36,7 +36,7 @@ button {
 	border: none;
 	outline: none;
 	font-weight: 700;
-	color: rgb(147,200,63);
+	color: rgb(153,0,0);
 	font-size: inherit;
 	transition: background-color 0.75s;
 	-webkit-transition: background-color 0.75s;
@@ -44,7 +44,7 @@ button {
 }
 
 button:hover {
-	background-color: rgb(147,200,63);
+	background-color: rgb(153,0,0);
 	color: white;
 }
 
@@ -70,6 +70,6 @@ button:hover {
 }
 
 .selected {
-	background-color: rgb(147,200,63);
+	background-color: rgb(153,0,0);
 	color: white;
 }
