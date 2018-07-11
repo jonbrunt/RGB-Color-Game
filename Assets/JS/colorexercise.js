@@ -13,27 +13,27 @@ winSelect();
 process();
 //Processes Player Clicks And Gives Results
 function process() {
-	for(var i = 0; i < numSquares; i++) {
-		squares[i].addEventListener("click", function() {
-			if(this.style.backgroundColor === winningColor) {
+	for (var i = 0; i < numSquares; i++) {
+		squares[i].addEventListener("click", function () {
+			if (this.style.backgroundColor === winningColor) {
 				document.querySelector("h1").style.backgroundColor = winningColor;
-				for(var i = 0; i < numSquares; i++) {
+				for (var i = 0; i < numSquares; i++) {
 					squares[i].style.backgroundColor = winningColor;
 				}
 				bannerText.textContent = "You Win!!!";
 				resetButton.textContent = "REPLAY?";
-			} 
-				else {
-					this.style.backgroundColor = "#232323";
-					bannerText.textContent = "Select Another Color";
-				}
+			}
+			else {
+				this.style.backgroundColor = "#232323";
+				bannerText.textContent = "Select Another Color";
+			}
 		});
-	}	
+	}
 }
 //Resets The Game To Original Settings
 function reset() {
 	document.querySelector("h1").style.backgroundColor = "rgb(153,0,0)";
-	resetButton.textContent	= "NEW COLORS";
+	resetButton.textContent = "NEW COLORS";
 	bannerText.textContent = " ";
 	colors = [];
 	changeColors();
@@ -41,7 +41,7 @@ function reset() {
 }
 //Mode Of Operation Based On Navbar
 function mode() {
-	resetButton.addEventListener("click", function() {
+	resetButton.addEventListener("click", function () {
 		reset();
 	});
 	easyButton.addEventListener("click", function () {
@@ -50,7 +50,7 @@ function mode() {
 		hardButton.classList.remove("selected");
 		reset();
 	});
-	hardButton.addEventListener("click", function() {
+	hardButton.addEventListener("click", function () {
 		numSquares = 6;
 		for (i = 0; i < numSquares; i++) {
 			squares[i].style.display = "block";
@@ -58,7 +58,7 @@ function mode() {
 		this.classList.add("selected");
 		easyButton.classList.remove("selected");
 		reset();
-	});	
+	});
 }
 //Change Colors
 function changeColors() {
@@ -70,13 +70,13 @@ function changeColors() {
 		colors.push(final);
 	}
 	//Assign Colors
-	for(var i = 0; i < squares.length; i++) {
+	for (var i = 0; i < squares.length; i++) {
 		squares[i].style.backgroundColor = colors[i];
-			//Adjust Squares For "Easy" Setting
-			if (i >= numSquares) {
-				squares[i].style.display = "none";
-			}
+		//Adjust Squares For "Easy" Setting
+		if (i >= numSquares) {
+			squares[i].style.display = "none";
 		}
+	}
 }
 //Selects Winning Color
 function winSelect() {
